@@ -1,0 +1,2 @@
+# TransactionsManagerIdentityServer
+OpenID Connect provider
