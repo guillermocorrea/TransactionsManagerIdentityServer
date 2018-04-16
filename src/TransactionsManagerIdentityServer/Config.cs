@@ -41,8 +41,8 @@ namespace TransactionsManagerIdentityServer
                     {
                         new Secret(_configuration.GetSection("Clients:MvcClient:ClientSecret").Value.Sha256())
                     },
-                    RedirectUris = { _configuration.GetSection("Clients:MvcClient:RedirectUris").Value },
-                    PostLogoutRedirectUris = { _configuration.GetSection("Clients:MvcClient:PostLogoutRedirectUris").Value },
+                    RedirectUris = _configuration.GetSection("Clients:MvcClient:RedirectUris").Value.Split(","),
+                    PostLogoutRedirectUris = _configuration.GetSection("Clients:MvcClient:PostLogoutRedirectUris").Value.Split(","),
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
