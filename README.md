@@ -9,7 +9,7 @@ Requirements
 
 Run the Application
 ===================
-* In a cmd hit `dotnet restore` and `dotnet run src/TransactionsManagerIdentityServer/TransactionsManagerIdentityServer.csproj` or open the solution in Visual Studio 2017 and run the application from there.
+* In a cmd hit `dotnet restore` and `dotnet run --project src/TransactionsManagerIdentityServer/TransactionsManagerIdentityServer.csproj` or open the solution in Visual Studio 2017 and run the application from there.
 * Open a browser at http://localhost:5000
 
 Dataset
